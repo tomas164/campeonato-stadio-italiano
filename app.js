@@ -72,8 +72,8 @@
       ? fechaHTML(proxima)
       : `<p class="vacio">El campeonato de esta categoría ya terminó.</p>`;
 
-    const filas = calcularPosiciones(cat).map((r, i) => `<tr>
-      <td>${i + 1}</td><td class="eq">${esc(r.equipo)}</td><td>${r.pj}</td><td>${r.pg}</td><td>${r.pe}</td><td>${r.pp}</td>
+    const filas = calcularPosiciones(cat).map((r, i) => `<tr class="${i === 0 && r.pts > 0 ? "primo" : ""}">
+      <td class="pos">${i + 1}</td><td class="eq">${esc(r.equipo)}</td><td>${r.pj}</td><td>${r.pg}</td><td>${r.pe}</td><td>${r.pp}</td>
       <td>${r.gf}</td><td>${r.gc}</td><td>${r.dif > 0 ? "+" : ""}${r.dif}</td><td class="pts">${r.pts}</td></tr>`).join("");
     document.getElementById("posiciones").innerHTML = `<thead><tr>
       <th>#</th><th class="eq">Equipo</th><th title="Partidos jugados">PJ</th><th title="Ganados">PG</th><th title="Empatados">PE</th>

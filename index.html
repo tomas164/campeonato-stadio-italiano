@@ -3,57 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Campeonato Stadio Italiano 2026</title>
+  <title>Campionato Stadio Italiano 2026</title>
   <meta name="description" content="Fixture, posiciones, goleadores y sancionados del campeonato interno de Stadio Italiano.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+  <meta name="theme-color" content="#0a2a5e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'><rect width='10' height='20' fill='%23009246'/><rect x='10' width='10' height='20' fill='%23fff'/><rect x='20' width='10' height='20' fill='%23ce2b37'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="hero">
-    <div class="tricolore" aria-hidden="true"><span></span><span></span><span></span></div>
-    <div class="wrap">
-      <p class="kicker">Stadio Italiano · Campeonato interno</p>
-      <h1>Campeonato 2026</h1>
-      <p class="sub" id="actualizado"></p>
+    <div class="fascia" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <svg class="scudetto" viewBox="0 0 100 120" aria-hidden="true">
+        <defs>
+          <clipPath id="scudo"><path d="M6 6h88v52c0 30-22 48-44 56C28 106 6 88 6 58z"/></clipPath>
+        </defs>
+        <g clip-path="url(#scudo)">
+          <rect x="0" y="0" width="34" height="120" fill="#009246"/>
+          <rect x="34" y="0" width="32" height="120" fill="#ffffff"/>
+          <rect x="66" y="0" width="34" height="120" fill="#ce2b37"/>
+        </g>
+        <path d="M6 6h88v52c0 30-22 48-44 56C28 106 6 88 6 58z" fill="none" stroke="#d4af37" stroke-width="5"/>
+        <path d="M50 30l5.3 11.8 12.7 1.2-9.6 8.5 2.8 12.5L50 57.6 38.8 64l2.8-12.5-9.6-8.5 12.7-1.2z" fill="#d4af37" stroke="#0a2a5e" stroke-width="1.5"/>
+        <text x="50" y="92" text-anchor="middle" font-family="Bodoni Moda, Georgia, serif" font-weight="700" font-size="20" fill="#0a2a5e">SI</text>
+      </svg>
+      <div>
+        <p class="kicker">Stadio Italiano · Campeonato interno</p>
+        <h1>Campionato <em>2026</em></h1>
+        <p class="motto">Forza ragazzi · Che vinca il migliore</p>
+        <p class="sub" id="actualizado"></p>
+      </div>
     </div>
   </header>
 
-  <nav class="cats wrap" id="categorias" role="tablist" aria-label="Categorías"></nav>
+  <nav class="cats" id="categorias-wrap" aria-label="Categorías">
+    <div class="wrap"><div class="cats-list" id="categorias" role="tablist"></div></div>
+  </nav>
 
   <main class="wrap">
-    <section id="proximos" class="card">
-      <h2>Próxima fecha</h2>
+    <section id="proximos" class="card destacada">
+      <h2>Próxima fecha <span>Prossima giornata</span></h2>
       <div id="proximos-body"></div>
     </section>
 
     <div class="grid">
       <section class="card">
-        <h2>Posiciones</h2>
+        <h2>Posiciones <span>Classifica</span></h2>
         <div class="table-scroll"><table class="tabla" id="posiciones"></table></div>
         <p class="nota">3 puntos por victoria y 1 por empate. Desempate por diferencia de gol y goles a favor.</p>
       </section>
 
       <section class="card">
-        <h2>Goleadores</h2>
+        <h2>Goleadores <span>Capocannonieri</span></h2>
         <div id="goleadores"></div>
       </section>
     </div>
 
     <section class="card">
-      <h2>Fixture y resultados</h2>
+      <h2>Fixture y resultados <span>Calendario</span></h2>
       <div id="fixture"></div>
     </section>
 
     <section class="card">
-      <h2>Sancionados</h2>
+      <h2>Sancionados <span>Squalificati</span></h2>
       <div id="sancionados"></div>
     </section>
   </main>
 
-  <footer class="wrap pie">Stadio Italiano · Campeonato interno 2026</footer>
+  <footer class="pie">
+    <div class="fascia" aria-hidden="true"></div>
+    <p class="wrap">Stadio Italiano · Campionato interno 2026 · <em>Grazie a tutti</em></p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
