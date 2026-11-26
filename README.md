@@ -55,3 +55,16 @@ Esos archivos se regeneran automáticamente con GitHub Actions cada vez que camb
 ```sh
 python3 tools/generar_calendarios.py
 ```
+
+## Dominio y seguridad
+
+El dominio futbolitostadioitaliano.cl está registrado en GoDaddy y su DNS lo administra Cloudflare, en la cuenta de tomas@austerra.org, con el plan gratuito. Cloudflare está delante de GitHub Pages y aplica:
+
+- HTTPS obligatorio, con cifrado "Full" hacia GitHub.
+- HSTS de seis meses, con subdominios y sin precarga.
+- Una regla de transformación llamada "Cabeceras de seguridad" que agrega X-Frame-Options, Permissions-Policy, Content-Security-Policy y Referrer-Policy.
+- La cabecera X-Content-Type-Options: nosniff.
+
+El dominio no envía correo. Por eso tiene registros SPF y DMARC que rechazan cualquier correo que diga venir de él.
+
+La página además trae su propia política de seguridad de contenido, para que siga protegida si alguien la abre desde la dirección de github.io.
