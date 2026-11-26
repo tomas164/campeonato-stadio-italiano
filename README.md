@@ -1,6 +1,6 @@
-# Campeonato Interno Stadio Italiano 2026
+# Futbolito Stadio Italiano 2026
 
-Sitio web del campeonato interno de fútbol de Stadio Italiano. Muestra el fixture, los resultados, la tabla de posiciones, los goleadores y los sancionados de las cuatro categorías: Junior, Senior-Super, Dorados y Femenino.
+Sitio web del Futbolito de Stadio Italiano. Muestra el fixture, los resultados, la tabla de posiciones, los goleadores y los sancionados de las cuatro categorías: Junior, Senior-Super, Dorados y Femenino.
 
 Es un sitio estático publicado con GitHub Pages. No necesita instalar nada.
 
