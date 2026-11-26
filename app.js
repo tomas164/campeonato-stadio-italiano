@@ -38,26 +38,60 @@
       .sort((a, b) => b.pts - a.pts || b.dif - a.dif || b.gf - a.gf || a.equipo.localeCompare(b.equipo));
   }
 
+  const GCAL_ICON = `<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm-2 7h14v11H5V9zm6 2v3H8v2h3v3h2v-3h3v-2h-3v-3h-2z"/></svg>`;
+
+  function urlCalendario(catId) {
+    const base = location.host + location.pathname.replace(/[^/]*$/, "");
+    return `webcal://${base}cal/${catId}.ics`;
+  }
+
+  function linkGoogleEvento(cat, fecha, p) {
+    const [h, m] = p.hora.split(":").map(Number);
+    const ini = fecha.dia.replace(/-/g, "") + "T" + String(h).padStart(2, "0") + String(m).padStart(2, "0") + "00";
+    const fin = fecha.dia.replace(/-/g, "") + "T" + String(h + 1).padStart(2, "0") + String(m).padStart(2, "0") + "00";
+    const params = new URLSearchParams({
+      action: "TEMPLATE",
+      text: `${p.local || "Por definir"} vs ${p.visita || "Por definir"} · ${cat.nombre}`,
+      dates: `${ini}/${fin}`,
+      ctz: "America/Santiago",
+      location: `Stadio Italiano, Las Condes, Santiago · Cancha ${p.cancha}`,
+      details: `${fecha.nombre} (${fecha.fase}) · Cancha ${p.cancha}\n${location.origin}${location.pathname}#${cat.id}`,
+    });
+    return `https://calendar.google.com/calendar/render?${params}`;
+  }
+
+  function agendarHTML(cat) {
+    const webcal = urlCalendario(cat.id);
+    const google = "https://calendar.google.com/calendar/r?cid=" + encodeURIComponent(webcal);
+    const https = webcal.replace(/^webcal:/, location.protocol);
+    return `<p class="agendar-txt">Agrega todos los partidos de ${esc(cat.nombre)} a tu calendario. Se actualiza solo cuando cambian horarios o cruces.</p>
+      <div class="agendar-btns">
+        <a class="btn btn-prim" href="${esc(google)}" target="_blank" rel="noopener">${GCAL_ICON} Google Calendar</a>
+        <a class="btn" href="${esc(webcal)}">${GCAL_ICON} iPhone / Outlook</a>
+        <a class="btn btn-link" href="${esc(https)}" download>Descargar .ics</a>
+      </div>`;
+  }
+
   function equipoHTML(nombre, clase) {
     return nombre ? `<span class="${clase}">${esc(nombre)}</span>` : `<span class="${clase} por-definir">Por definir</span>`;
   }
 
-  function partidoHTML(p) {
+  function partidoHTML(p, cat, fecha) {
     const marcador = jugado(p)
       ? `<span class="marcador">${p.gl} - ${p.gv}</span>`
       : `<span class="marcador pend">vs</span>`;
     return `<div class="partido">
-      <div class="meta">${esc(p.hora)}<br>Cancha ${esc(p.cancha)}</div>
+      <div class="meta">${esc(p.hora)} · Cancha ${esc(p.cancha)}${jugado(p) ? "" : `<br><a class="add-gcal" href="${esc(linkGoogleEvento(cat, fecha, p))}" target="_blank" rel="noopener" title="Agregar este partido a Google Calendar">${GCAL_ICON} Agendar</a>`}</div>
       ${equipoHTML(p.local, "local")}${marcador}${equipoHTML(p.visita, "visita")}
     </div>`;
   }
 
-  function fechaHTML(f) {
+  function fechaHTML(f, cat) {
     const libre = f.libre ? `<div class="libre">Libre: ${esc(f.libre)}</div>` : "";
     const tag = f.fase === "Playoffs" ? `<span class="tag">Playoffs</span>` : "";
     return `<div class="fecha">
       <div class="fecha-head"><strong>${esc(f.nombre)}</strong><span>${fechaTexto(f.dia)}</span>${tag}</div>
-      ${f.partidos.map(partidoHTML).join("")}${libre}
+      ${f.partidos.map((p) => partidoHTML(p, cat, f)).join("")}${libre}
     </div>`;
   }
 
@@ -69,7 +103,7 @@
     const hoy = hoyISO();
     const proxima = cat.fechas.find((f) => f.dia >= hoy);
     document.getElementById("proximos-body").innerHTML = proxima
-      ? fechaHTML(proxima)
+      ? fechaHTML(proxima, cat)
       : `<p class="vacio">El campeonato de esta categoría ya terminó.</p>`;
 
     const filas = calcularPosiciones(cat).map((r, i) => `<tr class="${i === 0 && r.pts > 0 ? "primo" : ""}">
@@ -87,7 +121,8 @@
         </tbody></table></div>`
       : `<p class="vacio">Todavía no hay goles registrados.</p>`;
 
-    document.getElementById("fixture").innerHTML = cat.fechas.map(fechaHTML).join("");
+    document.getElementById("agendar").innerHTML = agendarHTML(cat);
+    document.getElementById("fixture").innerHTML = cat.fechas.map((f) => fechaHTML(f, cat)).join("");
 
     const san = cat.sancionados || [];
     document.getElementById("sancionados").innerHTML = san.length

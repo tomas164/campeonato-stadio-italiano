@@ -45,3 +45,13 @@ python3 -m http.server 8000
 ```
 
 Después abrir http://localhost:8000.
+
+## Calendarios
+
+La carpeta `cal` tiene un archivo de calendario por categoría y uno con todas. Los visitantes se suscriben desde el sitio con Google Calendar, iPhone u Outlook, y su calendario se actualiza solo.
+
+Esos archivos se regeneran automáticamente con GitHub Actions cada vez que cambia `data/torneo.json`. Para generarlos a mano:
+
+```sh
+python3 tools/generar_calendarios.py
+```

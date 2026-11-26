@@ -1,0 +1,34 @@
+name: Calendarios
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/torneo.json
+      - tools/generar_calendarios.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar archivos .ics
+        run: python tools/generar_calendarios.py
+      - name: Publicar si cambiaron
+        run: |
+          if git diff --quiet -- cal; then
+            echo "Sin cambios en los calendarios."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add cal
+          git commit -m "Actualizar calendarios"
+          git push
