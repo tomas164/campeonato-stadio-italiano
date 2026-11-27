@@ -6,7 +6,9 @@ Si la planilla tiene algo que no se entiende (un equipo desconocido, una fecha
 sin día, etc.) el script termina con error y NO toca data/torneo.json, así la
 web sigue mostrando la última versión buena.
 """
+import difflib
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -88,20 +90,68 @@ def numero(v):
     return int(t) if t.isdigit() else None
 
 
+GENERICAS = {"FC", "CF", "LA", "EL", "DE", "DI", "SENIOR", "JUNIOR", "DORADOS", "FEM", "FEMENINO", "SUPER"}
+
+
+def parecido(a, b):
+    return difflib.SequenceMatcher(None, a, b).ratio()
+
+
 class Equipos:
-    def __init__(self, cat):
+    """Reconoce un equipo aunque venga mal escrito.
+
+    Orden: nombre exacto o alias conocido → una palabra propia de un solo
+    equipo (con tolerancia a errores de tipeo) → parecido del nombre completo.
+    Si dos equipos calzan igual de bien, no adivina y avisa del error.
+    """
+
+    def __init__(self, cat, correcciones):
         self.cat = cat["nombre"]
-        self.mapa = {clave(e): e for e in cat["equipos"]}
-        self.mapa.update({clave(a): e for a, e in cat["alias"].items()})
+        self.equipos = cat["equipos"]
+        self.correcciones = correcciones
+        self.mapa = {}
+        for nombre, equipo in [(e, e) for e in self.equipos] + list(cat["alias"].items()):
+            self.mapa[clave(nombre)] = equipo
+            self.mapa[clave(nombre).replace(" ", "")] = equipo
+        palabras = {e: {w for w in clave(e).split() if w not in GENERICAS and len(w) >= 4}
+                    for e in self.equipos}
+        for alias, e in cat["alias"].items():
+            palabras[e] |= {w for w in clave(alias).split() if w not in GENERICAS and len(w) >= 4}
+        repetidas = {w for e, ws in palabras.items() for w in ws
+                     if any(w in otras for o, otras in palabras.items() if o != e)}
+        self.propias = {e: ws - repetidas for e, ws in palabras.items()}
+
+    def adivinar(self, k):
+        candidatos = set()
+        for w in k.split():
+            if len(w) < 4 or w in GENERICAS:
+                continue
+            for e, propias in self.propias.items():
+                if any(parecido(w, p) >= 0.8 for p in propias):
+                    candidatos.add(e)
+        if len(candidatos) == 1:
+            return candidatos.pop()
+        if len(candidatos) > 1:
+            return None
+        puntajes = sorted(((max(parecido(k, c) for c, e2 in self.mapa.items() if e2 == e), e)
+                           for e in self.equipos), reverse=True)
+        (p1, e1), (p2, _) = puntajes[0], puntajes[1]
+        return e1 if p1 >= 0.75 and p1 - p2 >= 0.1 else None
 
     def __call__(self, valor, donde):
         t = texto(valor)
         if t in VACIOS:
             return None
-        if clave(t) in self.mapa:
-            return self.mapa[clave(t)]
+        k = clave(t)
+        if k in self.mapa or k.replace(" ", "") in self.mapa:
+            return self.mapa.get(k) or self.mapa[k.replace(" ", "")]
+        equipo = self.adivinar(k)
+        if equipo:
+            self.mapa[k] = equipo
+            self.correcciones.append(f"{self.cat}: «{t}» → {equipo} (primera vez en {donde})")
+            return equipo
         raise ErrorPlanilla(f"{donde}: no reconozco el equipo «{t}» en {self.cat}. "
-                            f"Equipos válidos: {', '.join(sorted(set(self.mapa.values())))}.")
+                            f"Equipos válidos: {', '.join(self.equipos)}.")
 
 
 def nombre_fecha(titulo):
@@ -286,31 +336,48 @@ def importar(ruta):
         wb = openpyxl.load_workbook(ruta, data_only=True, read_only=False)
     except Exception as e:
         raise ErrorPlanilla(f"No pude abrir la planilla: {e}")
-    avisos, categorias = [], []
+    avisos, correcciones, categorias = [], [], []
     for cat in CATEGORIAS:
         faltan = [h for h in cat["hojas"].values() if h not in wb.sheetnames]
         if faltan:
             raise ErrorPlanilla(f"Falta la hoja {', '.join(faltan)} (¿le cambiaron el nombre?).")
-        equipo = Equipos(cat)
+        equipo = Equipos(cat, correcciones)
         categorias.append({
             "id": cat["id"], "nombre": cat["nombre"], "equipos": cat["equipos"],
             "fechas": leer_fixture(wb[cat["hojas"]["fixture"]], cat, equipo, avisos),
             "goleadores": leer_goleadores(wb[cat["hojas"]["goleadores"]], equipo, avisos),
             "sancionados": leer_sancionados(wb[cat["hojas"]["sancionados"]], equipo),
         })
-    return categorias, avisos
+    return categorias, avisos, correcciones
+
+
+def resumen(avisos, correcciones):
+    """Deja las correcciones y avisos a la vista en el resumen de GitHub Actions."""
+    ruta = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not ruta or not (avisos or correcciones):
+        return
+    lineas = []
+    if correcciones:
+        lineas += ["### Nombres de equipo corregidos automáticamente", ""] + [f"- {c}" for c in correcciones] + [""]
+    if avisos:
+        lineas += ["### Avisos", ""] + [f"- {a}" for a in avisos] + [""]
+    with open(ruta, "a", encoding="utf-8") as f:
+        f.write("\n".join(lineas) + "\n")
 
 
 def main():
     if len(sys.argv) != 2:
         sys.exit("Uso: python3 tools/importar_planilla.py RUTA_AL_XLSX")
     try:
-        categorias, avisos = importar(sys.argv[1])
+        categorias, avisos, correcciones = importar(sys.argv[1])
     except ErrorPlanilla as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)
+    for c in correcciones:
+        print(f"Corregido: {c}")
     for a in avisos:
         print(f"Aviso: {a}")
+    resumen(avisos, correcciones)
 
     anterior = json.loads(SALIDA.read_text(encoding="utf-8")) if SALIDA.exists() else {}
     if anterior.get("categorias") == categorias:

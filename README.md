@@ -16,7 +16,7 @@ Para actualizar al instante (por ejemplo, justo después de cargar una fecha): e
 
 **Si la planilla tiene un error,** la web no se toca y sigue mostrando la última versión buena. Se abre un aviso en la pestaña **Issues** explicando qué fila revisar, y se cierra solo cuando la planilla vuelve a leerse bien. Errores típicos:
 
-- Un equipo escrito de una forma que no se reconoce. Las variantes conocidas (Internazionales, La Cosa Nostra, Pantere, Scuola, etc.) ya están cubiertas. Para agregar otra, se suma en `alias` dentro de `CATEGORIAS` en `tools/importar_planilla.py`.
+- Un equipo que no se puede reconocer. Los errores de tipeo se corrigen solos («Lazzio», «Tanquerai», «Cosa Nostra», «Panteras», «Inter FC», «Escuola»…): el importador busca una palabra propia de un solo equipo o un nombre muy parecido, y deja la lista de correcciones en el resumen de cada ejecución en Actions. Solo frena cuando el nombre no se parece a ningún equipo de esa categoría o calza igual con dos. Para enseñarle una variante nueva, se suma en `alias` dentro de `CATEGORIAS` en `tools/importar_planilla.py`.
 - Le cambiaron el nombre a una hoja, o el título de una fecha quedó sin día.
 - Cambiaron el archivo por otro nuevo en el Drive. Para reemplazarlo hay que usar **Administrar versiones → Subir nueva versión**, así el enlace se mantiene. Si el enlace cambia, se actualiza `DRIVE_ID` en el workflow.
 
