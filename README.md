@@ -4,39 +4,37 @@ Sitio web del Futbolito de Stadio Italiano. Muestra el fixture, los resultados, 
 
 Es un sitio estático publicado con GitHub Pages. No necesita instalar nada.
 
-## Cómo actualizar los datos
+## Cómo se actualizan los datos
 
-Toda la información está en un solo archivo: `data/torneo.json`. Se puede editar directo desde GitHub con el ícono del lápiz y guardar con "Commit changes". El sitio se actualiza solo en uno o dos minutos.
+**La fuente es la planilla Excel del Drive.** Los organizadores la editan como siempre y la web se actualiza sola:
 
-**Cargar un resultado.** Buscar el partido y cambiar `gl` (goles del local) y `gv` (goles de la visita):
+1. Cada 15 minutos, el proceso [Actualizar desde Drive](.github/workflows/actualizar-desde-drive.yml) descarga la planilla. Debe seguir compartida como «Cualquier persona con el enlace puede ver».
+2. `tools/importar_planilla.py` lee el fixture, los resultados, los goleadores y los sancionados de cada categoría y regenera `data/torneo.json`.
+3. Si hubo cambios, se regeneran los calendarios y se publica. La web queda al día en uno o dos minutos más.
 
-```json
-{ "hora": "17:00", "cancha": 1, "local": "Tanqueray", "visita": "Inter F.C.", "gl": 2, "gv": 1 }
+Para actualizar al instante (por ejemplo, justo después de cargar una fecha): en GitHub, **Actions → Actualizar desde Drive → Run workflow**. GitHub a veces atrasa los procesos programados unos minutos.
+
+**Si la planilla tiene un error,** la web no se toca y sigue mostrando la última versión buena. Se abre un aviso en la pestaña **Issues** explicando qué fila revisar, y se cierra solo cuando la planilla vuelve a leerse bien. Errores típicos:
+
+- Un equipo escrito de una forma que no se reconoce. Las variantes conocidas (Internazionales, La Cosa Nostra, Pantere, Scuola, etc.) ya están cubiertas. Para agregar otra, se suma en `alias` dentro de `CATEGORIAS` en `tools/importar_planilla.py`.
+- Le cambiaron el nombre a una hoja, o el título de una fecha quedó sin día.
+- Cambiaron el archivo por otro nuevo en el Drive. Para reemplazarlo hay que usar **Administrar versiones → Subir nueva versión**, así el enlace se mantiene. Si el enlace cambia, se actualiza `DRIVE_ID` en el workflow.
+
+**Qué lee de la planilla:**
+
+- **Fixture:** cada bloque con título «FECHA 1 SABADO 28 NOVIEMBRE» y encabezado HORARIO / CANCHA. Los goles van en las celdas del «-» a cada lado del V/S. Si solo hay un marcador escrito, el partido queda como pendiente.
+- **Goleadores:** jugador, equipo y TOTAL. Si TOTAL está vacío, suma las fechas. Las filas con TOTAL en error (#REF!) se omiten.
+- **Sancionados:** jugadores con «FECHAS POR CUMPLIR» mayor a 0, con su descripción.
+- **Posiciones:** no se leen de la planilla. La web las calcula con los resultados: 3 puntos por victoria y 1 por empate; desempata por diferencia de gol y luego goles a favor.
+
+No conviene editar `data/torneo.json` a mano: el próximo ciclo lo reemplaza con lo que diga la planilla.
+
+Para probar el importador en tu computador:
+
+```sh
+pip install --require-hashes -r tools/requirements.txt
+python3 tools/importar_planilla.py ruta/a/planilla.xlsx
 ```
-
-La tabla de posiciones se calcula sola con los partidos de fase regular. Da 3 puntos por victoria y 1 por empate, y desempata por diferencia de gol y luego goles a favor.
-
-**Definir un cruce de playoffs.** Reemplazar `null` por el nombre del equipo en `local` y `visita`.
-
-**Agregar goleadores.** En la lista `goleadores` de la categoría:
-
-```json
-"goleadores": [
-  { "jugador": "Nombre Apellido", "equipo": "Sampdoria", "goles": 3 }
-]
-```
-
-**Agregar sancionados.** En la lista `sancionados` de la categoría:
-
-```json
-"sancionados": [
-  { "jugador": "Nombre Apellido", "equipo": "Lazio", "fechasPorCumplir": 1, "motivo": "Roja directa" }
-]
-```
-
-Al terminar, actualizar también el campo `actualizado` con la fecha del día.
-
-Los nombres de equipo en los partidos deben escribirse igual que en la lista `equipos` de la categoría, si no el partido no suma en la tabla.
 
 ## Ver el sitio en tu computador
 

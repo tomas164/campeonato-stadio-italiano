@@ -1,47 +1,203 @@
 {
   "torneo": "Futbolito Stadio Italiano 2026",
-  "actualizado": "2026-11-26",
-  "puntos": { "victoria": 3, "empate": 1, "derrota": 0 },
+  "actualizado": "2026-11-27",
+  "puntos": {
+    "victoria": 3,
+    "empate": 1,
+    "derrota": 0
+  },
   "categorias": [
     {
       "id": "junior",
       "nombre": "Junior",
-      "equipos": ["Internazionale", "Lazio", "Napoli", "Vecchia", "Scuola Junior"],
+      "equipos": [
+        "Internazionale",
+        "Lazio",
+        "Napoli",
+        "Vecchia",
+        "Scuola Junior"
+      ],
       "fechas": [
-        { "nombre": "Fecha 1", "fase": "Fase regular", "dia": "2026-11-29", "libre": "Napoli", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": "Internazionale", "visita": "Lazio", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": "Vecchia", "visita": "Scuola Junior", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 2", "fase": "Fase regular", "dia": "2026-12-05", "libre": "Scuola Junior", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": "Napoli", "visita": "Internazionale", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": "Vecchia", "visita": "Lazio", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 3", "fase": "Fase regular", "dia": "2026-12-07", "libre": "Lazio", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": "Vecchia", "visita": "Internazionale", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Napoli", "visita": "Scuola Junior", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 4", "fase": "Fase regular", "dia": "2026-12-13", "libre": "Vecchia", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": "Internazionale", "visita": "Scuola Junior", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": "Lazio", "visita": "Napoli", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Cuartos de final (ida)", "fase": "Playoffs", "dia": "2026-12-19", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Cuartos de final (vuelta)", "fase": "Playoffs", "dia": "2026-12-22", "partidos": [
-          { "hora": "21:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "21:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Semifinal", "fase": "Playoffs", "dia": "2026-12-26", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Final", "fase": "Playoffs", "dia": "2026-12-27", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null }
-        ]}
+        {
+          "nombre": "Fecha 1",
+          "fase": "Fase regular",
+          "dia": "2026-11-29",
+          "libre": "Napoli",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": "Internazionale",
+              "visita": "Lazio",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": "Vecchia",
+              "visita": "Scuola Junior",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 2",
+          "fase": "Fase regular",
+          "dia": "2026-12-05",
+          "libre": "Scuola Junior",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": "Napoli",
+              "visita": "Internazionale",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": "Vecchia",
+              "visita": "Lazio",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 3",
+          "fase": "Fase regular",
+          "dia": "2026-12-07",
+          "libre": "Lazio",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Vecchia",
+              "visita": "Internazionale",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Napoli",
+              "visita": "Scuola Junior",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 4",
+          "fase": "Fase regular",
+          "dia": "2026-12-13",
+          "libre": "Vecchia",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": "Internazionale",
+              "visita": "Scuola Junior",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": "Lazio",
+              "visita": "Napoli",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Cuartos de final (ida)",
+          "fase": "Playoffs",
+          "dia": "2026-12-19",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Cuartos de final (vuelta)",
+          "fase": "Playoffs",
+          "dia": "2026-12-22",
+          "partidos": [
+            {
+              "hora": "21:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "21:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Semifinal",
+          "fase": "Playoffs",
+          "dia": "2026-12-26",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Final",
+          "fase": "Playoffs",
+          "dia": "2026-12-27",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        }
       ],
       "goleadores": [],
       "sancionados": []
@@ -49,67 +205,390 @@
     {
       "id": "senior",
       "nombre": "Senior-Super",
-      "equipos": ["Tanqueray", "Inter F.C.", "Quaranta Milan", "Cagliari Senior", "Match Point", "La Cossa Nostra", "Sampdoria", "Scuola Senior"],
+      "equipos": [
+        "Tanqueray",
+        "Inter F.C.",
+        "Quaranta Milan",
+        "Cagliari Senior",
+        "Match Point",
+        "La Cossa Nostra",
+        "Sampdoria",
+        "Scuola Senior"
+      ],
       "fechas": [
-        { "nombre": "Fecha 1", "fase": "Fase regular", "dia": "2026-11-28", "partidos": [
-          { "hora": "17:00", "cancha": 1, "local": "Tanqueray", "visita": "Inter F.C.", "gl": null, "gv": null },
-          { "hora": "17:00", "cancha": 2, "local": "Quaranta Milan", "visita": "Cagliari Senior", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 1, "local": "Match Point", "visita": "La Cossa Nostra", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": "Sampdoria", "visita": "Scuola Senior", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 2", "fase": "Fase regular", "dia": "2026-12-03", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": "Tanqueray", "visita": "Cagliari Senior", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Inter F.C.", "visita": "La Cossa Nostra", "gl": null, "gv": null },
-          { "hora": "21:00", "cancha": 1, "local": "Quaranta Milan", "visita": "Scuola Senior", "gl": null, "gv": null },
-          { "hora": "21:00", "cancha": 2, "local": "Sampdoria", "visita": "Match Point", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 3", "fase": "Fase regular", "dia": "2026-12-06", "partidos": [
-          { "hora": "19:00", "cancha": 1, "local": "Match Point", "visita": "Quaranta Milan", "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 2, "local": "Inter F.C.", "visita": "Sampdoria", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 1, "local": "Cagliari Senior", "visita": "Scuola Senior", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Tanqueray", "visita": "La Cossa Nostra", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 4", "fase": "Fase regular", "dia": "2026-12-10", "partidos": [
-          { "hora": "21:00", "cancha": 1, "local": "Cagliari Senior", "visita": "Match Point", "gl": null, "gv": null },
-          { "hora": "21:00", "cancha": 2, "local": "Tanqueray", "visita": "Scuola Senior", "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 1, "local": "Inter F.C.", "visita": "Quaranta Milan", "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 2, "local": "La Cossa Nostra", "visita": "Sampdoria", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 5", "fase": "Fase regular", "dia": "2026-12-12", "partidos": [
-          { "hora": "19:00", "cancha": 1, "local": "La Cossa Nostra", "visita": "Quaranta Milan", "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 2, "local": "Cagliari Senior", "visita": "Inter F.C.", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 1, "local": "Scuola Senior", "visita": "Match Point", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Tanqueray", "visita": "Sampdoria", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 6", "fase": "Fase regular", "dia": "2026-12-17", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": "Tanqueray", "visita": "Match Point", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Sampdoria", "visita": "Quaranta Milan", "gl": null, "gv": null },
-          { "hora": "21:00", "cancha": 1, "local": "Scuola Senior", "visita": "Inter F.C.", "gl": null, "gv": null },
-          { "hora": "21:00", "cancha": 2, "local": "La Cossa Nostra", "visita": "Cagliari Senior", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 7", "fase": "Fase regular", "dia": "2026-12-20", "partidos": [
-          { "hora": "17:00", "cancha": 1, "local": "Quaranta Milan", "visita": "Tanqueray", "gl": null, "gv": null },
-          { "hora": "17:00", "cancha": 2, "local": "Sampdoria", "visita": "Cagliari Senior", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 1, "local": "Match Point", "visita": "Inter F.C.", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": "Scuola Senior", "visita": "La Cossa Nostra", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha recuperativa", "fase": "Fase regular", "dia": "2026-12-21", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Cuartos de final", "fase": "Playoffs", "dia": "2026-12-23", "partidos": [
-          { "hora": "21:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "21:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Semifinal", "fase": "Playoffs", "dia": "2026-12-26", "partidos": [
-          { "hora": "19:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Final", "fase": "Playoffs", "dia": "2026-12-27", "partidos": [
-          { "hora": "19:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null }
-        ]}
+        {
+          "nombre": "Fecha 1",
+          "fase": "Fase regular",
+          "dia": "2026-11-28",
+          "partidos": [
+            {
+              "hora": "17:00",
+              "cancha": 1,
+              "local": "Tanqueray",
+              "visita": "Inter F.C.",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "17:00",
+              "cancha": 2,
+              "local": "Quaranta Milan",
+              "visita": "Cagliari Senior",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": "Match Point",
+              "visita": "La Cossa Nostra",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": "Sampdoria",
+              "visita": "Scuola Senior",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 2",
+          "fase": "Fase regular",
+          "dia": "2026-12-03",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Tanqueray",
+              "visita": "Cagliari Senior",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Inter F.C.",
+              "visita": "La Cossa Nostra",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "21:00",
+              "cancha": 1,
+              "local": "Quaranta Milan",
+              "visita": "Scuola Senior",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "21:00",
+              "cancha": 2,
+              "local": "Sampdoria",
+              "visita": "Match Point",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 3",
+          "fase": "Fase regular",
+          "dia": "2026-12-06",
+          "partidos": [
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": "Match Point",
+              "visita": "Quaranta Milan",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "19:00",
+              "cancha": 2,
+              "local": "Inter F.C.",
+              "visita": "Sampdoria",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Cagliari Senior",
+              "visita": "Scuola Senior",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Tanqueray",
+              "visita": "La Cossa Nostra",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 4",
+          "fase": "Fase regular",
+          "dia": "2026-12-10",
+          "partidos": [
+            {
+              "hora": "21:00",
+              "cancha": 1,
+              "local": "Cagliari Senior",
+              "visita": "Match Point",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "21:00",
+              "cancha": 2,
+              "local": "Tanqueray",
+              "visita": "Scuola Senior",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "22:00",
+              "cancha": 1,
+              "local": "Inter F.C.",
+              "visita": "Quaranta Milan",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "22:00",
+              "cancha": 2,
+              "local": "La Cossa Nostra",
+              "visita": "Sampdoria",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 5",
+          "fase": "Fase regular",
+          "dia": "2026-12-12",
+          "partidos": [
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": "La Cossa Nostra",
+              "visita": "Quaranta Milan",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "19:00",
+              "cancha": 2,
+              "local": "Cagliari Senior",
+              "visita": "Inter F.C.",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Scuola Senior",
+              "visita": "Match Point",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Tanqueray",
+              "visita": "Sampdoria",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 6",
+          "fase": "Fase regular",
+          "dia": "2026-12-17",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Tanqueray",
+              "visita": "Match Point",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Sampdoria",
+              "visita": "Quaranta Milan",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "21:00",
+              "cancha": 1,
+              "local": "Scuola Senior",
+              "visita": "Inter F.C.",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "21:00",
+              "cancha": 2,
+              "local": "La Cossa Nostra",
+              "visita": "Cagliari Senior",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 7",
+          "fase": "Fase regular",
+          "dia": "2026-12-20",
+          "partidos": [
+            {
+              "hora": "17:00",
+              "cancha": 1,
+              "local": "Quaranta Milan",
+              "visita": "Tanqueray",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "17:00",
+              "cancha": 2,
+              "local": "Sampdoria",
+              "visita": "Cagliari Senior",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": "Match Point",
+              "visita": "Inter F.C.",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": "Scuola Senior",
+              "visita": "La Cossa Nostra",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha recuperativa",
+          "fase": "Fase regular",
+          "dia": "2026-12-21",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Cuartos de final",
+          "fase": "Playoffs",
+          "dia": "2026-12-23",
+          "partidos": [
+            {
+              "hora": "21:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "21:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "22:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "22:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Semifinal",
+          "fase": "Playoffs",
+          "dia": "2026-12-26",
+          "partidos": [
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "19:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Final",
+          "fase": "Playoffs",
+          "dia": "2026-12-27",
+          "partidos": [
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        }
       ],
       "goleadores": [],
       "sancionados": []
@@ -117,39 +596,189 @@
     {
       "id": "dorados",
       "nombre": "Dorados",
-      "equipos": ["Tanque Invecchiato", "Cagliari Dorados", "Acheronte", "Scuola Dorados"],
+      "equipos": [
+        "Tanque Invecchiato",
+        "Cagliari Dorados",
+        "Acheronte",
+        "Scuola Dorados"
+      ],
       "fechas": [
-        { "nombre": "Fecha 1", "fase": "Fase regular", "dia": "2026-11-28", "partidos": [
-          { "hora": "19:00", "cancha": 1, "local": "Tanque Invecchiato", "visita": "Cagliari Dorados", "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 2, "local": "Acheronte", "visita": "Scuola Dorados", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 2", "fase": "Fase regular", "dia": "2026-12-03", "partidos": [
-          { "hora": "22:00", "cancha": 1, "local": "Tanque Invecchiato", "visita": "Acheronte", "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 2, "local": "Cagliari Dorados", "visita": "Scuola Dorados", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 3", "fase": "Fase regular", "dia": "2026-12-06", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": "Scuola Dorados", "visita": "Tanque Invecchiato", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": "Cagliari Dorados", "visita": "Acheronte", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 4", "fase": "Fase regular", "dia": "2026-12-10", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": "Cagliari Dorados", "visita": "Tanque Invecchiato", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Scuola Dorados", "visita": "Acheronte", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 5", "fase": "Fase regular", "dia": "2026-12-12", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": "Scuola Dorados", "visita": "Cagliari Dorados", "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": "Acheronte", "visita": "Tanque Invecchiato", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 6", "fase": "Fase regular", "dia": "2026-12-17", "partidos": [
-          { "hora": "22:00", "cancha": 1, "local": "Cagliari Dorados", "visita": "Acheronte", "gl": null, "gv": null },
-          { "hora": "22:00", "cancha": 2, "local": "Tanque Invecchiato", "visita": "Scuola Dorados", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Semifinal", "fase": "Playoffs", "dia": "2026-12-20", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Final", "fase": "Playoffs", "dia": "2026-12-27", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null }
-        ]}
+        {
+          "nombre": "Fecha 1",
+          "fase": "Fase regular",
+          "dia": "2026-11-28",
+          "partidos": [
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": "Tanque Invecchiato",
+              "visita": "Cagliari Dorados",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "19:00",
+              "cancha": 2,
+              "local": "Acheronte",
+              "visita": "Scuola Dorados",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 2",
+          "fase": "Fase regular",
+          "dia": "2026-12-03",
+          "partidos": [
+            {
+              "hora": "22:00",
+              "cancha": 1,
+              "local": "Tanque Invecchiato",
+              "visita": "Acheronte",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "22:00",
+              "cancha": 2,
+              "local": "Cagliari Dorados",
+              "visita": "Scuola Dorados",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 3",
+          "fase": "Fase regular",
+          "dia": "2026-12-06",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": "Scuola Dorados",
+              "visita": "Tanque Invecchiato",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": "Cagliari Dorados",
+              "visita": "Acheronte",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 4",
+          "fase": "Fase regular",
+          "dia": "2026-12-10",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Cagliari Dorados",
+              "visita": "Tanque Invecchiato",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Scuola Dorados",
+              "visita": "Acheronte",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 5",
+          "fase": "Fase regular",
+          "dia": "2026-12-12",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": "Scuola Dorados",
+              "visita": "Cagliari Dorados",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": "Acheronte",
+              "visita": "Tanque Invecchiato",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 6",
+          "fase": "Fase regular",
+          "dia": "2026-12-17",
+          "partidos": [
+            {
+              "hora": "22:00",
+              "cancha": 1,
+              "local": "Cagliari Dorados",
+              "visita": "Acheronte",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "22:00",
+              "cancha": 2,
+              "local": "Tanque Invecchiato",
+              "visita": "Scuola Dorados",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Semifinal",
+          "fase": "Playoffs",
+          "dia": "2026-12-20",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Final",
+          "fase": "Playoffs",
+          "dia": "2026-12-27",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        }
       ],
       "goleadores": [],
       "sancionados": []
@@ -157,47 +786,235 @@
     {
       "id": "femenino",
       "nombre": "Femenino",
-      "equipos": ["Pantere Bianche", "Pink Demon", "Ragazze di Fuoco", "Scuola Fem"],
+      "equipos": [
+        "Pantere Bianche",
+        "Pink Demon",
+        "Ragazze di Fuoco",
+        "Scuola Fem"
+      ],
       "fechas": [
-        { "nombre": "Fecha 1", "fase": "Fase regular", "dia": "2026-12-02", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": "Pantere Bianche", "visita": "Pink Demon", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Ragazze di Fuoco", "visita": "Scuola Fem", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 2", "fase": "Fase regular", "dia": "2026-12-05", "partidos": [
-          { "hora": "17:00", "cancha": 1, "local": "Pink Demon", "visita": "Ragazze di Fuoco", "gl": null, "gv": null },
-          { "hora": "17:00", "cancha": 2, "local": "Pantere Bianche", "visita": "Scuola Fem", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 3", "fase": "Fase regular", "dia": "2026-12-09", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": "Scuola Fem", "visita": "Pink Demon", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Ragazze di Fuoco", "visita": "Pantere Bianche", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 4", "fase": "Fase regular", "dia": "2026-12-13", "partidos": [
-          { "hora": "19:00", "cancha": 1, "local": "Pantere Bianche", "visita": "Pink Demon", "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 2, "local": "Ragazze di Fuoco", "visita": "Scuola Fem", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 5", "fase": "Fase regular", "dia": "2026-12-16", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": "Pink Demon", "visita": "Ragazze di Fuoco", "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": "Pantere Bianche", "visita": "Scuola Fem", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha 6", "fase": "Fase regular", "dia": "2026-12-19", "partidos": [
-          { "hora": "17:00", "cancha": 1, "local": "Scuola Fem", "visita": "Pink Demon", "gl": null, "gv": null },
-          { "hora": "17:00", "cancha": 2, "local": "Ragazze di Fuoco", "visita": "Pantere Bianche", "gl": null, "gv": null }
-        ]},
-        { "nombre": "Fecha recuperativa", "fase": "Fase regular", "dia": "2026-12-21", "partidos": [
-          { "hora": "19:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "19:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Cuartos de final", "fase": "Playoffs", "dia": "2026-12-22", "partidos": [
-          { "hora": "20:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "20:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Semifinal", "fase": "Playoffs", "dia": "2026-12-26", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null },
-          { "hora": "18:00", "cancha": 2, "local": null, "visita": null, "gl": null, "gv": null }
-        ]},
-        { "nombre": "Final", "fase": "Playoffs", "dia": "2026-12-27", "partidos": [
-          { "hora": "18:00", "cancha": 1, "local": null, "visita": null, "gl": null, "gv": null }
-        ]}
+        {
+          "nombre": "Fecha 1",
+          "fase": "Fase regular",
+          "dia": "2026-12-02",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Pantere Bianche",
+              "visita": "Pink Demon",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Ragazze di Fuoco",
+              "visita": "Scuola Fem",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 2",
+          "fase": "Fase regular",
+          "dia": "2026-12-05",
+          "partidos": [
+            {
+              "hora": "17:00",
+              "cancha": 1,
+              "local": "Pink Demon",
+              "visita": "Ragazze di Fuoco",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "17:00",
+              "cancha": 2,
+              "local": "Pantere Bianche",
+              "visita": "Scuola Fem",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 3",
+          "fase": "Fase regular",
+          "dia": "2026-12-09",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Scuola Fem",
+              "visita": "Pink Demon",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Ragazze di Fuoco",
+              "visita": "Pantere Bianche",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 4",
+          "fase": "Fase regular",
+          "dia": "2026-12-13",
+          "partidos": [
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": "Pantere Bianche",
+              "visita": "Pink Demon",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "19:00",
+              "cancha": 2,
+              "local": "Ragazze di Fuoco",
+              "visita": "Scuola Fem",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 5",
+          "fase": "Fase regular",
+          "dia": "2026-12-16",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": "Pink Demon",
+              "visita": "Ragazze di Fuoco",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": "Pantere Bianche",
+              "visita": "Scuola Fem",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha 6",
+          "fase": "Fase regular",
+          "dia": "2026-12-19",
+          "partidos": [
+            {
+              "hora": "17:00",
+              "cancha": 1,
+              "local": "Scuola Fem",
+              "visita": "Pink Demon",
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "17:00",
+              "cancha": 2,
+              "local": "Ragazze di Fuoco",
+              "visita": "Pantere Bianche",
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Fecha recuperativa",
+          "fase": "Fase regular",
+          "dia": "2026-12-21",
+          "partidos": [
+            {
+              "hora": "19:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "19:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Cuartos de final",
+          "fase": "Playoffs",
+          "dia": "2026-12-22",
+          "partidos": [
+            {
+              "hora": "20:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "20:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Semifinal",
+          "fase": "Playoffs",
+          "dia": "2026-12-26",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            },
+            {
+              "hora": "18:00",
+              "cancha": 2,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        },
+        {
+          "nombre": "Final",
+          "fase": "Playoffs",
+          "dia": "2026-12-27",
+          "partidos": [
+            {
+              "hora": "18:00",
+              "cancha": 1,
+              "local": null,
+              "visita": null,
+              "gl": null,
+              "gv": null
+            }
+          ]
+        }
       ],
       "goleadores": [],
       "sancionados": []

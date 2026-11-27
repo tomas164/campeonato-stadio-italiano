@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:dorados-0-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261128T220000Z
 DTEND:20261128T230000Z
 SUMMARY:Tanque Invecchiato vs Cagliari Dorados · Dorados
@@ -19,7 +19,7 @@ DESCRIPTION:Fecha 1 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-0-1@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261128T220000Z
 DTEND:20261128T230000Z
 SUMMARY:Acheronte vs Scuola Dorados · Dorados
@@ -29,7 +29,7 @@ DESCRIPTION:Fecha 1 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-1-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261204T010000Z
 DTEND:20261204T020000Z
 SUMMARY:Tanque Invecchiato vs Acheronte · Dorados
@@ -39,7 +39,7 @@ DESCRIPTION:Fecha 2 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-1-1@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261204T010000Z
 DTEND:20261204T020000Z
 SUMMARY:Cagliari Dorados vs Scuola Dorados · Dorados
@@ -49,7 +49,7 @@ DESCRIPTION:Fecha 2 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-2-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261206T210000Z
 DTEND:20261206T220000Z
 SUMMARY:Scuola Dorados vs Tanque Invecchiato · Dorados
@@ -59,7 +59,7 @@ DESCRIPTION:Fecha 3 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-2-1@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261206T210000Z
 DTEND:20261206T220000Z
 SUMMARY:Cagliari Dorados vs Acheronte · Dorados
@@ -69,7 +69,7 @@ DESCRIPTION:Fecha 3 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-3-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261210T230000Z
 DTEND:20261211T000000Z
 SUMMARY:Cagliari Dorados vs Tanque Invecchiato · Dorados
@@ -79,7 +79,7 @@ DESCRIPTION:Fecha 4 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-3-1@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261210T230000Z
 DTEND:20261211T000000Z
 SUMMARY:Scuola Dorados vs Acheronte · Dorados
@@ -89,7 +89,7 @@ DESCRIPTION:Fecha 4 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-4-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261212T210000Z
 DTEND:20261212T220000Z
 SUMMARY:Scuola Dorados vs Cagliari Dorados · Dorados
@@ -99,7 +99,7 @@ DESCRIPTION:Fecha 5 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-4-1@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261212T210000Z
 DTEND:20261212T220000Z
 SUMMARY:Acheronte vs Tanque Invecchiato · Dorados
@@ -109,7 +109,7 @@ DESCRIPTION:Fecha 5 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-5-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261218T010000Z
 DTEND:20261218T020000Z
 SUMMARY:Cagliari Dorados vs Acheronte · Dorados
@@ -119,7 +119,7 @@ DESCRIPTION:Fecha 6 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-5-1@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261218T010000Z
 DTEND:20261218T020000Z
 SUMMARY:Tanque Invecchiato vs Scuola Dorados · Dorados
@@ -129,7 +129,7 @@ DESCRIPTION:Fecha 6 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-6-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261220T210000Z
 DTEND:20261220T220000Z
 SUMMARY:Por definir vs Por definir · Dorados
@@ -139,7 +139,7 @@ DESCRIPTION:Semifinal (Playoffs) · Cancha 1\nhttps://futbolitostadioitalia
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-6-1@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261220T210000Z
 DTEND:20261220T220000Z
 SUMMARY:Por definir vs Por definir · Dorados
@@ -149,7 +149,7 @@ DESCRIPTION:Semifinal (Playoffs) · Cancha 2\nhttps://futbolitostadioitalia
 END:VEVENT
 BEGIN:VEVENT
 UID:dorados-7-0@futbolitostadioitaliano.cl
-DTSTAMP:20261126T000000Z
+DTSTAMP:20261127T000000Z
 DTSTART:20261227T210000Z
 DTEND:20261227T220000Z
 SUMMARY:Por definir vs Por definir · Dorados

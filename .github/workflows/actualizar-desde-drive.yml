@@ -1,0 +1,92 @@
+name: Actualizar desde Drive
+
+# Lee la planilla del Drive cada 15 minutos (o al apretar "Run workflow")
+# y publica los cambios en la web y en los calendarios.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: actualizar-desde-drive
+  cancel-in-progress: false
+
+env:
+  DRIVE_ID: 1zfZmDPBPHX0UAxs1yIgRN7_twOeX2h1X
+  TITULO_AVISO: "La planilla del Drive tiene un problema"
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: pip install --quiet --require-hashes -r tools/requirements.txt
+
+      - name: Descargar planilla
+        run: |
+          mkdir -p "$RUNNER_TEMP/planilla"
+          curl -fsSL --retry 3 --max-time 120 -o "$RUNNER_TEMP/planilla/torneo.xlsx" \
+            "https://drive.google.com/uc?export=download&id=${DRIVE_ID}" \
+            || { echo "No se pudo descargar la planilla del Drive." > "$RUNNER_TEMP/error.txt"; exit 1; }
+          if [ "$(head -c 2 "$RUNNER_TEMP/planilla/torneo.xlsx")" != "PK" ]; then
+            echo "El Drive no entregó un Excel. Probablemente el archivo dejó de estar compartido como «Cualquier persona con el enlace»." > "$RUNNER_TEMP/error.txt"
+            exit 1
+          fi
+
+      - name: Leer planilla
+        run: |
+          python tools/importar_planilla.py "$RUNNER_TEMP/planilla/torneo.xlsx" 2> >(tee "$RUNNER_TEMP/error.txt" >&2)
+
+      - name: Generar calendarios
+        run: python tools/generar_calendarios.py
+
+      - name: Publicar si hay cambios
+        run: |
+          if git diff --quiet -- data cal; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data cal
+          git commit -m "Actualizar datos desde la planilla del Drive"
+          git push
+
+      - name: Cerrar aviso anterior
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --state open --search "in:title \"$TITULO_AVISO\"" --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "La planilla volvió a leerse bien. La web está al día."
+          done
+
+      - name: Avisar del problema
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          detalle="$(cat "$RUNNER_TEMP/error.txt" 2>/dev/null || true)"
+          [ -n "$detalle" ] || detalle="Falló un paso del proceso. Revisa el detalle en el enlace."
+          cuerpo="$(printf 'La web **no se actualizó** y sigue mostrando la última versión buena.\n\n**Qué pasó:**\n```\n%s\n```\n\nCorrige la planilla en el Drive; en el próximo intento (15 min) se cierra este aviso solo.\n\nDetalle: %s' "$detalle" "$RUN_URL")"
+          n="$(gh issue list --state open --search "in:title \"$TITULO_AVISO\"" --json number --jq '.[0].number')"
+          if [ -n "$n" ]; then
+            ultimo="$(gh issue view "$n" --json comments,body --jq '(.comments | last | .body) // .body')"
+            if ! printf '%s' "$ultimo" | grep -qF -- "$detalle"; then
+              gh issue comment "$n" --body "$cuerpo"
+            fi
+          else
+            gh issue create --title "$TITULO_AVISO" --body "$cuerpo"
+          fi
