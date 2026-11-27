@@ -7,6 +7,7 @@ sin día, etc.) el script termina con error y NO toca data/torneo.json, así la
 web sigue mostrando la última versión buena.
 """
 import difflib
+import hashlib
 import json
 import os
 import re
@@ -365,6 +366,14 @@ def resumen(avisos, correcciones):
         f.write("\n".join(lineas) + "\n")
 
 
+def huella_fechas(categorias):
+    """Resume días y horarios de todo el fixture. Sirve para saber si la
+    planilla ya trae un calendario distinto al que tenía el aviso."""
+    base = [(c["id"], f["nombre"], f["dia"], [p["hora"] for p in f["partidos"]])
+            for c in categorias for f in c["fechas"]]
+    return hashlib.sha256(json.dumps(base, ensure_ascii=False).encode()).hexdigest()[:16]
+
+
 def main():
     if len(sys.argv) != 2:
         sys.exit("Uso: python3 tools/importar_planilla.py RUTA_AL_XLSX")
@@ -385,8 +394,16 @@ def main():
         return
     hoy = datetime.now(ZoneInfo("America/Santiago")).date().isoformat()
     datos = {"torneo": "Futbolito Stadio Italiano 2026", "actualizado": hoy,
-             "puntos": anterior.get("puntos", {"victoria": 3, "empate": 1, "derrota": 0}),
-             "categorias": categorias}
+             "puntos": anterior.get("puntos", {"victoria": 3, "empate": 1, "derrota": 0})}
+    # El aviso «fechas por confirmar» se mantiene mientras la planilla siga
+    # con el mismo calendario; apenas cambian días u horarios, se quita solo.
+    aviso = anterior.get("aviso")
+    if aviso:
+        if aviso.get("huella") == huella_fechas(categorias):
+            datos["aviso"] = aviso
+        else:
+            print("Las fechas cambiaron en la planilla: se quita el aviso «por confirmar».")
+    datos["categorias"] = categorias
     SALIDA.write_bytes((json.dumps(datos, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
     print(f"data/torneo.json actualizado ({hoy}).")
 

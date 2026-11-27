@@ -256,3 +256,15 @@ main { padding-top: 10px; padding-bottom: 28px; }
   .foto:hover img { transform: none; }
   .anim main .card, .anim .fotos .foto { opacity: 1; transform: none; transition: none; }
 }
+
+/* Aviso «fechas por confirmar» */
+.aviso {
+  display: flex; gap: 14px; align-items: flex-start; margin: 16px 0 0; padding: 14px 18px;
+  background: var(--surface); border: 1px solid var(--oro); border-left: 5px solid var(--rosso); border-radius: 6px;
+  box-shadow: 0 8px 24px -18px rgba(10,42,94,.35);
+}
+.aviso svg { flex: 0 0 auto; color: var(--rosso); margin-top: 2px; }
+.aviso strong { display: block; font-family: "Bodoni Moda", Georgia, serif; font-size: 20px; color: var(--accent); }
+.aviso p { margin: 4px 0 0; font-size: 14px; color: var(--text); }
+.fecha-head .dia-pc { text-decoration: line-through; text-decoration-color: var(--rosso); }
+.tag.tag-pc { background: var(--rosso); color: #fff; border-color: var(--rosso); }

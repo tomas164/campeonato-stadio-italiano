@@ -36,6 +36,20 @@ pip install --require-hashes -r tools/requirements.txt
 python3 tools/importar_planilla.py ruta/a/planilla.xlsx
 ```
 
+## Aviso «Fechas por confirmar»
+
+Si el campeonato se aplaza, se puede marcar todo el calendario como por confirmar:
+
+```sh
+python3 tools/aviso.py activar            # texto por defecto
+python3 tools/aviso.py activar "Otro texto para el aviso"
+python3 tools/aviso.py quitar
+```
+
+Mientras está activo, la web muestra el aviso arriba, tacha el día de cada fecha sin jugar con la etiqueta «Por confirmar» y oculta el botón «Agendar» de cada partido. En los calendarios, los partidos salen como tentativos y con «[Por confirmar]» en el título.
+
+**Se quita solo:** apenas la planilla del Drive trae días u horarios distintos, el siguiente ciclo de actualización saca el aviso. Si confirman las mismas fechas originales, hay que quitarlo a mano con `quitar`.
+
 ## Ver el sitio en tu computador
 
 ```sh

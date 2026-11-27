@@ -6,6 +6,11 @@
     "empate": 1,
     "derrota": 0
   },
+  "aviso": {
+    "titulo": "Fechas por confirmar",
+    "texto": "El Futbolito se aplazó. Las fechas y horarios que ves son los originales y se actualizarán apenas la organización confirme el nuevo calendario.",
+    "huella": "152c0a36605fb577"
+  },
   "categorias": [
     {
       "id": "junior",

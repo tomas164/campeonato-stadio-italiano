@@ -12,7 +12,8 @@ UID:junior-0-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261129T210000Z
 DTEND:20261129T220000Z
-SUMMARY:Internazionale vs Lazio · Junior
+SUMMARY:[Por confirmar] Internazionale vs Lazio · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -22,7 +23,8 @@ UID:junior-0-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261129T210000Z
 DTEND:20261129T220000Z
-SUMMARY:Vecchia vs Scuola Junior · Junior
+SUMMARY:[Por confirmar] Vecchia vs Scuola Junior · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -32,7 +34,8 @@ UID:junior-1-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261205T210000Z
 DTEND:20261205T220000Z
-SUMMARY:Napoli vs Internazionale · Junior
+SUMMARY:[Por confirmar] Napoli vs Internazionale · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -42,7 +45,8 @@ UID:junior-1-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261205T210000Z
 DTEND:20261205T220000Z
-SUMMARY:Vecchia vs Lazio · Junior
+SUMMARY:[Por confirmar] Vecchia vs Lazio · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -52,7 +56,8 @@ UID:junior-2-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261207T230000Z
 DTEND:20261208T000000Z
-SUMMARY:Vecchia vs Internazionale · Junior
+SUMMARY:[Por confirmar] Vecchia vs Internazionale · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -62,7 +67,8 @@ UID:junior-2-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261207T230000Z
 DTEND:20261208T000000Z
-SUMMARY:Napoli vs Scuola Junior · Junior
+SUMMARY:[Por confirmar] Napoli vs Scuola Junior · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -72,7 +78,8 @@ UID:junior-3-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
-SUMMARY:Internazionale vs Scuola Junior · Junior
+SUMMARY:[Por confirmar] Internazionale vs Scuola Junior · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -82,7 +89,8 @@ UID:junior-3-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
-SUMMARY:Lazio vs Napoli · Junior
+SUMMARY:[Por confirmar] Lazio vs Napoli · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -92,7 +100,8 @@ UID:junior-4-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261219T210000Z
 DTEND:20261219T220000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (ida) (Playoffs) · Cancha 1\nhttps://futbolit
  ostadioitaliano.cl/#junior
@@ -102,7 +111,8 @@ UID:junior-4-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261219T220000Z
 DTEND:20261219T230000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (ida) (Playoffs) · Cancha 1\nhttps://futbolit
  ostadioitaliano.cl/#junior
@@ -112,7 +122,8 @@ UID:junior-5-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261223T000000Z
 DTEND:20261223T010000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (vuelta) (Playoffs) · Cancha 1\nhttps://futbo
  litostadioitaliano.cl/#junior
@@ -122,7 +133,8 @@ UID:junior-5-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261223T000000Z
 DTEND:20261223T010000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Cuartos de final (vuelta) (Playoffs) · Cancha 2\nhttps://futbo
  litostadioitaliano.cl/#junior
@@ -132,7 +144,8 @@ UID:junior-6-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T230000Z
 DTEND:20261227T000000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Semifinal (Playoffs) · Cancha 1\nhttps://futbolitostadioitalia
  no.cl/#junior
@@ -142,7 +155,8 @@ UID:junior-6-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T230000Z
 DTEND:20261227T000000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Semifinal (Playoffs) · Cancha 2\nhttps://futbolitostadioitalia
  no.cl/#junior
@@ -152,7 +166,8 @@ UID:junior-7-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261227T230000Z
 DTEND:20261228T000000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Final (Playoffs) · Cancha 1\nhttps://futbolitostadioitaliano.c
  l/#junior
@@ -162,7 +177,8 @@ UID:senior-0-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261128T200000Z
 DTEND:20261128T210000Z
-SUMMARY:Tanqueray vs Inter F.C. · Senior-Super
+SUMMARY:[Por confirmar] Tanqueray vs Inter F.C. · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -172,7 +188,8 @@ UID:senior-0-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261128T200000Z
 DTEND:20261128T210000Z
-SUMMARY:Quaranta Milan vs Cagliari Senior · Senior-Super
+SUMMARY:[Por confirmar] Quaranta Milan vs Cagliari Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -182,7 +199,8 @@ UID:senior-0-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261128T210000Z
 DTEND:20261128T220000Z
-SUMMARY:Match Point vs La Cossa Nostra · Senior-Super
+SUMMARY:[Por confirmar] Match Point vs La Cossa Nostra · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -192,7 +210,8 @@ UID:senior-0-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261128T210000Z
 DTEND:20261128T220000Z
-SUMMARY:Sampdoria vs Scuola Senior · Senior-Super
+SUMMARY:[Por confirmar] Sampdoria vs Scuola Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -202,7 +221,8 @@ UID:senior-1-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261203T230000Z
 DTEND:20261204T000000Z
-SUMMARY:Tanqueray vs Cagliari Senior · Senior-Super
+SUMMARY:[Por confirmar] Tanqueray vs Cagliari Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -212,7 +232,8 @@ UID:senior-1-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261203T230000Z
 DTEND:20261204T000000Z
-SUMMARY:Inter F.C. vs La Cossa Nostra · Senior-Super
+SUMMARY:[Por confirmar] Inter F.C. vs La Cossa Nostra · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -222,7 +243,8 @@ UID:senior-1-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261204T000000Z
 DTEND:20261204T010000Z
-SUMMARY:Quaranta Milan vs Scuola Senior · Senior-Super
+SUMMARY:[Por confirmar] Quaranta Milan vs Scuola Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -232,7 +254,8 @@ UID:senior-1-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261204T000000Z
 DTEND:20261204T010000Z
-SUMMARY:Sampdoria vs Match Point · Senior-Super
+SUMMARY:[Por confirmar] Sampdoria vs Match Point · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -242,7 +265,8 @@ UID:senior-2-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261206T220000Z
 DTEND:20261206T230000Z
-SUMMARY:Match Point vs Quaranta Milan · Senior-Super
+SUMMARY:[Por confirmar] Match Point vs Quaranta Milan · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -252,7 +276,8 @@ UID:senior-2-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261206T220000Z
 DTEND:20261206T230000Z
-SUMMARY:Inter F.C. vs Sampdoria · Senior-Super
+SUMMARY:[Por confirmar] Inter F.C. vs Sampdoria · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -262,7 +287,8 @@ UID:senior-2-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261206T230000Z
 DTEND:20261207T000000Z
-SUMMARY:Cagliari Senior vs Scuola Senior · Senior-Super
+SUMMARY:[Por confirmar] Cagliari Senior vs Scuola Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -272,7 +298,8 @@ UID:senior-2-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261206T230000Z
 DTEND:20261207T000000Z
-SUMMARY:Tanqueray vs La Cossa Nostra · Senior-Super
+SUMMARY:[Por confirmar] Tanqueray vs La Cossa Nostra · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -282,7 +309,8 @@ UID:senior-3-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261211T000000Z
 DTEND:20261211T010000Z
-SUMMARY:Cagliari Senior vs Match Point · Senior-Super
+SUMMARY:[Por confirmar] Cagliari Senior vs Match Point · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -292,7 +320,8 @@ UID:senior-3-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261211T000000Z
 DTEND:20261211T010000Z
-SUMMARY:Tanqueray vs Scuola Senior · Senior-Super
+SUMMARY:[Por confirmar] Tanqueray vs Scuola Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -302,7 +331,8 @@ UID:senior-3-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261211T010000Z
 DTEND:20261211T020000Z
-SUMMARY:Inter F.C. vs Quaranta Milan · Senior-Super
+SUMMARY:[Por confirmar] Inter F.C. vs Quaranta Milan · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -312,7 +342,8 @@ UID:senior-3-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261211T010000Z
 DTEND:20261211T020000Z
-SUMMARY:La Cossa Nostra vs Sampdoria · Senior-Super
+SUMMARY:[Por confirmar] La Cossa Nostra vs Sampdoria · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -322,7 +353,8 @@ UID:senior-4-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261212T220000Z
 DTEND:20261212T230000Z
-SUMMARY:La Cossa Nostra vs Quaranta Milan · Senior-Super
+SUMMARY:[Por confirmar] La Cossa Nostra vs Quaranta Milan · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -332,7 +364,8 @@ UID:senior-4-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261212T220000Z
 DTEND:20261212T230000Z
-SUMMARY:Cagliari Senior vs Inter F.C. · Senior-Super
+SUMMARY:[Por confirmar] Cagliari Senior vs Inter F.C. · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -342,7 +375,8 @@ UID:senior-4-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261212T230000Z
 DTEND:20261213T000000Z
-SUMMARY:Scuola Senior vs Match Point · Senior-Super
+SUMMARY:[Por confirmar] Scuola Senior vs Match Point · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -352,7 +386,8 @@ UID:senior-4-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261212T230000Z
 DTEND:20261213T000000Z
-SUMMARY:Tanqueray vs Sampdoria · Senior-Super
+SUMMARY:[Por confirmar] Tanqueray vs Sampdoria · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -362,7 +397,8 @@ UID:senior-5-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261217T230000Z
 DTEND:20261218T000000Z
-SUMMARY:Tanqueray vs Match Point · Senior-Super
+SUMMARY:[Por confirmar] Tanqueray vs Match Point · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -372,7 +408,8 @@ UID:senior-5-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261217T230000Z
 DTEND:20261218T000000Z
-SUMMARY:Sampdoria vs Quaranta Milan · Senior-Super
+SUMMARY:[Por confirmar] Sampdoria vs Quaranta Milan · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -382,7 +419,8 @@ UID:senior-5-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261218T000000Z
 DTEND:20261218T010000Z
-SUMMARY:Scuola Senior vs Inter F.C. · Senior-Super
+SUMMARY:[Por confirmar] Scuola Senior vs Inter F.C. · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -392,7 +430,8 @@ UID:senior-5-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261218T000000Z
 DTEND:20261218T010000Z
-SUMMARY:La Cossa Nostra vs Cagliari Senior · Senior-Super
+SUMMARY:[Por confirmar] La Cossa Nostra vs Cagliari Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -402,7 +441,8 @@ UID:senior-6-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261220T200000Z
 DTEND:20261220T210000Z
-SUMMARY:Quaranta Milan vs Tanqueray · Senior-Super
+SUMMARY:[Por confirmar] Quaranta Milan vs Tanqueray · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 7 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -412,7 +452,8 @@ UID:senior-6-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261220T200000Z
 DTEND:20261220T210000Z
-SUMMARY:Sampdoria vs Cagliari Senior · Senior-Super
+SUMMARY:[Por confirmar] Sampdoria vs Cagliari Senior · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 7 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -422,7 +463,8 @@ UID:senior-6-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261220T210000Z
 DTEND:20261220T220000Z
-SUMMARY:Match Point vs Inter F.C. · Senior-Super
+SUMMARY:[Por confirmar] Match Point vs Inter F.C. · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 7 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -432,7 +474,8 @@ UID:senior-6-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261220T210000Z
 DTEND:20261220T220000Z
-SUMMARY:Scuola Senior vs La Cossa Nostra · Senior-Super
+SUMMARY:[Por confirmar] Scuola Senior vs La Cossa Nostra · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 7 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#senior
@@ -442,7 +485,8 @@ UID:senior-7-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261221T230000Z
 DTEND:20261222T000000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha recuperativa (Fase regular) · Cancha 1\nhttps://futbolit
  ostadioitaliano.cl/#senior
@@ -452,7 +496,8 @@ UID:senior-7-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261221T230000Z
 DTEND:20261222T000000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha recuperativa (Fase regular) · Cancha 2\nhttps://futbolit
  ostadioitaliano.cl/#senior
@@ -462,7 +507,8 @@ UID:senior-8-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261224T000000Z
 DTEND:20261224T010000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (Playoffs) · Cancha 1\nhttps://futbolitostadi
  oitaliano.cl/#senior
@@ -472,7 +518,8 @@ UID:senior-8-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261224T000000Z
 DTEND:20261224T010000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Cuartos de final (Playoffs) · Cancha 2\nhttps://futbolitostadi
  oitaliano.cl/#senior
@@ -482,7 +529,8 @@ UID:senior-8-2@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261224T010000Z
 DTEND:20261224T020000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (Playoffs) · Cancha 1\nhttps://futbolitostadi
  oitaliano.cl/#senior
@@ -492,7 +540,8 @@ UID:senior-8-3@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261224T010000Z
 DTEND:20261224T020000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Cuartos de final (Playoffs) · Cancha 2\nhttps://futbolitostadi
  oitaliano.cl/#senior
@@ -502,7 +551,8 @@ UID:senior-9-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T220000Z
 DTEND:20261226T230000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Semifinal (Playoffs) · Cancha 1\nhttps://futbolitostadioitalia
  no.cl/#senior
@@ -512,7 +562,8 @@ UID:senior-9-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T220000Z
 DTEND:20261226T230000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Semifinal (Playoffs) · Cancha 2\nhttps://futbolitostadioitalia
  no.cl/#senior
@@ -522,7 +573,8 @@ UID:senior-10-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261227T220000Z
 DTEND:20261227T230000Z
-SUMMARY:Por definir vs Por definir · Senior-Super
+SUMMARY:[Por confirmar] Por definir vs Por definir · Senior-Super
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Final (Playoffs) · Cancha 1\nhttps://futbolitostadioitaliano.c
  l/#senior
@@ -532,7 +584,8 @@ UID:dorados-0-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261128T220000Z
 DTEND:20261128T230000Z
-SUMMARY:Tanque Invecchiato vs Cagliari Dorados · Dorados
+SUMMARY:[Por confirmar] Tanque Invecchiato vs Cagliari Dorados · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -542,7 +595,8 @@ UID:dorados-0-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261128T220000Z
 DTEND:20261128T230000Z
-SUMMARY:Acheronte vs Scuola Dorados · Dorados
+SUMMARY:[Por confirmar] Acheronte vs Scuola Dorados · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -552,7 +606,8 @@ UID:dorados-1-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261204T010000Z
 DTEND:20261204T020000Z
-SUMMARY:Tanque Invecchiato vs Acheronte · Dorados
+SUMMARY:[Por confirmar] Tanque Invecchiato vs Acheronte · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -562,7 +617,8 @@ UID:dorados-1-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261204T010000Z
 DTEND:20261204T020000Z
-SUMMARY:Cagliari Dorados vs Scuola Dorados · Dorados
+SUMMARY:[Por confirmar] Cagliari Dorados vs Scuola Dorados · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -572,7 +628,8 @@ UID:dorados-2-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261206T210000Z
 DTEND:20261206T220000Z
-SUMMARY:Scuola Dorados vs Tanque Invecchiato · Dorados
+SUMMARY:[Por confirmar] Scuola Dorados vs Tanque Invecchiato · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -582,7 +639,8 @@ UID:dorados-2-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261206T210000Z
 DTEND:20261206T220000Z
-SUMMARY:Cagliari Dorados vs Acheronte · Dorados
+SUMMARY:[Por confirmar] Cagliari Dorados vs Acheronte · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -592,7 +650,8 @@ UID:dorados-3-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261210T230000Z
 DTEND:20261211T000000Z
-SUMMARY:Cagliari Dorados vs Tanque Invecchiato · Dorados
+SUMMARY:[Por confirmar] Cagliari Dorados vs Tanque Invecchiato · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -602,7 +661,8 @@ UID:dorados-3-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261210T230000Z
 DTEND:20261211T000000Z
-SUMMARY:Scuola Dorados vs Acheronte · Dorados
+SUMMARY:[Por confirmar] Scuola Dorados vs Acheronte · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -612,7 +672,8 @@ UID:dorados-4-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261212T210000Z
 DTEND:20261212T220000Z
-SUMMARY:Scuola Dorados vs Cagliari Dorados · Dorados
+SUMMARY:[Por confirmar] Scuola Dorados vs Cagliari Dorados · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -622,7 +683,8 @@ UID:dorados-4-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261212T210000Z
 DTEND:20261212T220000Z
-SUMMARY:Acheronte vs Tanque Invecchiato · Dorados
+SUMMARY:[Por confirmar] Acheronte vs Tanque Invecchiato · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -632,7 +694,8 @@ UID:dorados-5-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261218T010000Z
 DTEND:20261218T020000Z
-SUMMARY:Cagliari Dorados vs Acheronte · Dorados
+SUMMARY:[Por confirmar] Cagliari Dorados vs Acheronte · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -642,7 +705,8 @@ UID:dorados-5-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261218T010000Z
 DTEND:20261218T020000Z
-SUMMARY:Tanque Invecchiato vs Scuola Dorados · Dorados
+SUMMARY:[Por confirmar] Tanque Invecchiato vs Scuola Dorados · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#dorados
@@ -652,7 +716,8 @@ UID:dorados-6-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261220T210000Z
 DTEND:20261220T220000Z
-SUMMARY:Por definir vs Por definir · Dorados
+SUMMARY:[Por confirmar] Por definir vs Por definir · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Semifinal (Playoffs) · Cancha 1\nhttps://futbolitostadioitalia
  no.cl/#dorados
@@ -662,7 +727,8 @@ UID:dorados-6-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261220T210000Z
 DTEND:20261220T220000Z
-SUMMARY:Por definir vs Por definir · Dorados
+SUMMARY:[Por confirmar] Por definir vs Por definir · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Semifinal (Playoffs) · Cancha 2\nhttps://futbolitostadioitalia
  no.cl/#dorados
@@ -672,7 +738,8 @@ UID:dorados-7-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261227T210000Z
 DTEND:20261227T220000Z
-SUMMARY:Por definir vs Por definir · Dorados
+SUMMARY:[Por confirmar] Por definir vs Por definir · Dorados
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Final (Playoffs) · Cancha 1\nhttps://futbolitostadioitaliano.c
  l/#dorados
@@ -682,7 +749,8 @@ UID:femenino-0-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261202T230000Z
 DTEND:20261203T000000Z
-SUMMARY:Pantere Bianche vs Pink Demon · Femenino
+SUMMARY:[Por confirmar] Pantere Bianche vs Pink Demon · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -692,7 +760,8 @@ UID:femenino-0-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261202T230000Z
 DTEND:20261203T000000Z
-SUMMARY:Ragazze di Fuoco vs Scuola Fem · Femenino
+SUMMARY:[Por confirmar] Ragazze di Fuoco vs Scuola Fem · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -702,7 +771,8 @@ UID:femenino-1-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261205T200000Z
 DTEND:20261205T210000Z
-SUMMARY:Pink Demon vs Ragazze di Fuoco · Femenino
+SUMMARY:[Por confirmar] Pink Demon vs Ragazze di Fuoco · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -712,7 +782,8 @@ UID:femenino-1-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261205T200000Z
 DTEND:20261205T210000Z
-SUMMARY:Pantere Bianche vs Scuola Fem · Femenino
+SUMMARY:[Por confirmar] Pantere Bianche vs Scuola Fem · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -722,7 +793,8 @@ UID:femenino-2-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261209T230000Z
 DTEND:20261210T000000Z
-SUMMARY:Scuola Fem vs Pink Demon · Femenino
+SUMMARY:[Por confirmar] Scuola Fem vs Pink Demon · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -732,7 +804,8 @@ UID:femenino-2-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261209T230000Z
 DTEND:20261210T000000Z
-SUMMARY:Ragazze di Fuoco vs Pantere Bianche · Femenino
+SUMMARY:[Por confirmar] Ragazze di Fuoco vs Pantere Bianche · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -742,7 +815,8 @@ UID:femenino-3-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261213T220000Z
 DTEND:20261213T230000Z
-SUMMARY:Pantere Bianche vs Pink Demon · Femenino
+SUMMARY:[Por confirmar] Pantere Bianche vs Pink Demon · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -752,7 +826,8 @@ UID:femenino-3-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261213T220000Z
 DTEND:20261213T230000Z
-SUMMARY:Ragazze di Fuoco vs Scuola Fem · Femenino
+SUMMARY:[Por confirmar] Ragazze di Fuoco vs Scuola Fem · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -762,7 +837,8 @@ UID:femenino-4-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261216T230000Z
 DTEND:20261217T000000Z
-SUMMARY:Pink Demon vs Ragazze di Fuoco · Femenino
+SUMMARY:[Por confirmar] Pink Demon vs Ragazze di Fuoco · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -772,7 +848,8 @@ UID:femenino-4-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261216T230000Z
 DTEND:20261217T000000Z
-SUMMARY:Pantere Bianche vs Scuola Fem · Femenino
+SUMMARY:[Por confirmar] Pantere Bianche vs Scuola Fem · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 5 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -782,7 +859,8 @@ UID:femenino-5-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261219T200000Z
 DTEND:20261219T210000Z
-SUMMARY:Scuola Fem vs Pink Demon · Femenino
+SUMMARY:[Por confirmar] Scuola Fem vs Pink Demon · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -792,7 +870,8 @@ UID:femenino-5-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261219T200000Z
 DTEND:20261219T210000Z
-SUMMARY:Ragazze di Fuoco vs Pantere Bianche · Femenino
+SUMMARY:[Por confirmar] Ragazze di Fuoco vs Pantere Bianche · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 6 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#femenino
@@ -802,7 +881,8 @@ UID:femenino-6-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261221T220000Z
 DTEND:20261221T230000Z
-SUMMARY:Por definir vs Por definir · Femenino
+SUMMARY:[Por confirmar] Por definir vs Por definir · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha recuperativa (Fase regular) · Cancha 1\nhttps://futbolit
  ostadioitaliano.cl/#femenino
@@ -812,7 +892,8 @@ UID:femenino-6-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261221T220000Z
 DTEND:20261221T230000Z
-SUMMARY:Por definir vs Por definir · Femenino
+SUMMARY:[Por confirmar] Por definir vs Por definir · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha recuperativa (Fase regular) · Cancha 2\nhttps://futbolit
  ostadioitaliano.cl/#femenino
@@ -822,7 +903,8 @@ UID:femenino-7-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261222T230000Z
 DTEND:20261223T000000Z
-SUMMARY:Por definir vs Por definir · Femenino
+SUMMARY:[Por confirmar] Por definir vs Por definir · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (Playoffs) · Cancha 1\nhttps://futbolitostadi
  oitaliano.cl/#femenino
@@ -832,7 +914,8 @@ UID:femenino-7-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261222T230000Z
 DTEND:20261223T000000Z
-SUMMARY:Por definir vs Por definir · Femenino
+SUMMARY:[Por confirmar] Por definir vs Por definir · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Cuartos de final (Playoffs) · Cancha 2\nhttps://futbolitostadi
  oitaliano.cl/#femenino
@@ -842,7 +925,8 @@ UID:femenino-8-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T210000Z
 DTEND:20261226T220000Z
-SUMMARY:Por definir vs Por definir · Femenino
+SUMMARY:[Por confirmar] Por definir vs Por definir · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Semifinal (Playoffs) · Cancha 1\nhttps://futbolitostadioitalia
  no.cl/#femenino
@@ -852,7 +936,8 @@ UID:femenino-8-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T210000Z
 DTEND:20261226T220000Z
-SUMMARY:Por definir vs Por definir · Femenino
+SUMMARY:[Por confirmar] Por definir vs Por definir · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Semifinal (Playoffs) · Cancha 2\nhttps://futbolitostadioitalia
  no.cl/#femenino
@@ -862,7 +947,8 @@ UID:femenino-9-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261227T210000Z
 DTEND:20261227T220000Z
-SUMMARY:Por definir vs Por definir · Femenino
+SUMMARY:[Por confirmar] Por definir vs Por definir · Femenino
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Final (Playoffs) · Cancha 1\nhttps://futbolitostadioitaliano.c
  l/#femenino

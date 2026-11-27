@@ -12,7 +12,8 @@ UID:junior-0-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261129T210000Z
 DTEND:20261129T220000Z
-SUMMARY:Internazionale vs Lazio · Junior
+SUMMARY:[Por confirmar] Internazionale vs Lazio · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -22,7 +23,8 @@ UID:junior-0-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261129T210000Z
 DTEND:20261129T220000Z
-SUMMARY:Vecchia vs Scuola Junior · Junior
+SUMMARY:[Por confirmar] Vecchia vs Scuola Junior · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 1 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -32,7 +34,8 @@ UID:junior-1-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261205T210000Z
 DTEND:20261205T220000Z
-SUMMARY:Napoli vs Internazionale · Junior
+SUMMARY:[Por confirmar] Napoli vs Internazionale · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -42,7 +45,8 @@ UID:junior-1-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261205T210000Z
 DTEND:20261205T220000Z
-SUMMARY:Vecchia vs Lazio · Junior
+SUMMARY:[Por confirmar] Vecchia vs Lazio · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 2 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -52,7 +56,8 @@ UID:junior-2-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261207T230000Z
 DTEND:20261208T000000Z
-SUMMARY:Vecchia vs Internazionale · Junior
+SUMMARY:[Por confirmar] Vecchia vs Internazionale · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -62,7 +67,8 @@ UID:junior-2-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261207T230000Z
 DTEND:20261208T000000Z
-SUMMARY:Napoli vs Scuola Junior · Junior
+SUMMARY:[Por confirmar] Napoli vs Scuola Junior · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 3 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -72,7 +78,8 @@ UID:junior-3-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
-SUMMARY:Internazionale vs Scuola Junior · Junior
+SUMMARY:[Por confirmar] Internazionale vs Scuola Junior · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 1\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -82,7 +89,8 @@ UID:junior-3-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
-SUMMARY:Lazio vs Napoli · Junior
+SUMMARY:[Por confirmar] Lazio vs Napoli · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Fecha 4 (Fase regular) · Cancha 2\nhttps://futbolitostadioital
  iano.cl/#junior
@@ -92,7 +100,8 @@ UID:junior-4-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261219T210000Z
 DTEND:20261219T220000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (ida) (Playoffs) · Cancha 1\nhttps://futbolit
  ostadioitaliano.cl/#junior
@@ -102,7 +111,8 @@ UID:junior-4-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261219T220000Z
 DTEND:20261219T230000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (ida) (Playoffs) · Cancha 1\nhttps://futbolit
  ostadioitaliano.cl/#junior
@@ -112,7 +122,8 @@ UID:junior-5-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261223T000000Z
 DTEND:20261223T010000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Cuartos de final (vuelta) (Playoffs) · Cancha 1\nhttps://futbo
  litostadioitaliano.cl/#junior
@@ -122,7 +133,8 @@ UID:junior-5-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261223T000000Z
 DTEND:20261223T010000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Cuartos de final (vuelta) (Playoffs) · Cancha 2\nhttps://futbo
  litostadioitaliano.cl/#junior
@@ -132,7 +144,8 @@ UID:junior-6-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T230000Z
 DTEND:20261227T000000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Semifinal (Playoffs) · Cancha 1\nhttps://futbolitostadioitalia
  no.cl/#junior
@@ -142,7 +155,8 @@ UID:junior-6-1@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261226T230000Z
 DTEND:20261227T000000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 2
 DESCRIPTION:Semifinal (Playoffs) · Cancha 2\nhttps://futbolitostadioitalia
  no.cl/#junior
@@ -152,7 +166,8 @@ UID:junior-7-0@futbolitostadioitaliano.cl
 DTSTAMP:20261127T000000Z
 DTSTART:20261227T230000Z
 DTEND:20261228T000000Z
-SUMMARY:Por definir vs Por definir · Junior
+SUMMARY:[Por confirmar] Por definir vs Por definir · Junior
+STATUS:TENTATIVE
 LOCATION:Stadio Italiano\, Las Condes\, Santiago · Cancha 1
 DESCRIPTION:Final (Playoffs) · Cancha 1\nhttps://futbolitostadioitaliano.c
  l/#junior

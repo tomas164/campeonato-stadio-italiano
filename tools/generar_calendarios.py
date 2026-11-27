@@ -38,7 +38,7 @@ def utc(dt):
     return dt.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
 
-def eventos(cat, ahora):
+def eventos(cat, ahora, por_confirmar=False):
     for i, fecha in enumerate(cat["fechas"]):
         for j, p in enumerate(fecha["partidos"]):
             local = p["local"] or "Por definir"
@@ -46,6 +46,9 @@ def eventos(cat, ahora):
             jugado = isinstance(p.get("gl"), int) and isinstance(p.get("gv"), int)
             marcador = f" {p['gl']}-{p['gv']} " if jugado else " vs "
             titulo = f"{local}{marcador}{visita} · {cat['nombre']}"
+            tentativo = por_confirmar and not jugado
+            if tentativo:
+                titulo = "[Por confirmar] " + titulo
             inicio = datetime.fromisoformat(f"{fecha['dia']}T{p['hora']}").replace(tzinfo=ZONA)
             desc = f"{fecha['nombre']} ({fecha['fase']}) · Cancha {p['cancha']}\nhttps://{DOMINIO}/#{cat['id']}"
             yield [
@@ -55,13 +58,14 @@ def eventos(cat, ahora):
                 f"DTSTART:{utc(inicio)}",
                 f"DTEND:{utc(inicio + DURACION)}",
                 f"SUMMARY:{esc(titulo)}",
+                f"STATUS:{'TENTATIVE' if tentativo else 'CONFIRMED'}",
                 f"LOCATION:{esc(LUGAR + ' · Cancha ' + str(p['cancha']))}",
                 f"DESCRIPTION:{esc(desc)}",
                 "END:VEVENT",
             ]
 
 
-def calendario(nombre, categorias, ahora):
+def calendario(nombre, categorias, ahora, por_confirmar=False):
     lineas = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -74,7 +78,7 @@ def calendario(nombre, categorias, ahora):
         "X-PUBLISHED-TTL:PT6H",
     ]
     for cat in categorias:
-        for ev in eventos(cat, ahora):
+        for ev in eventos(cat, ahora, por_confirmar):
             lineas += ev
     lineas.append("END:VCALENDAR")
     return "\r\n".join(plegar(l) for l in lineas) + "\r\n"
@@ -87,9 +91,10 @@ def main():
     salida = RAIZ / "cal"
     salida.mkdir(exist_ok=True)
     cats = datos["categorias"]
+    pc = bool(datos.get("aviso"))
     for cat in cats:
-        (salida / f"{cat['id']}.ics").write_bytes(calendario(f"Futbolito Stadio Italiano · {cat['nombre']}", [cat], ahora).encode("utf-8"))
-    (salida / "todas.ics").write_bytes(calendario("Futbolito Stadio Italiano · Todas las categorías", cats, ahora).encode("utf-8"))
+        (salida / f"{cat['id']}.ics").write_bytes(calendario(f"Futbolito Stadio Italiano · {cat['nombre']}", [cat], ahora, pc).encode("utf-8"))
+    (salida / "todas.ics").write_bytes(calendario("Futbolito Stadio Italiano · Todas las categorías", cats, ahora, pc).encode("utf-8"))
     print("Calendarios generados:", ", ".join(sorted(p.name for p in salida.glob("*.ics"))))
 
 

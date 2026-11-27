@@ -2,6 +2,7 @@
   const DIAS = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
   const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
   let datos = null;
+  const porConfirmar = () => Boolean(datos && datos.aviso);
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const jugado = (p) => Number.isInteger(p.gl) && Number.isInteger(p.gv);
@@ -64,7 +65,10 @@
     const webcal = urlCalendario(cat.id);
     const google = "https://calendar.google.com/calendar/r?cid=" + encodeURIComponent(webcal);
     const https = webcal.replace(/^webcal:/, location.protocol);
-    return `<p class="agendar-txt">Agrega todos los partidos de ${esc(cat.nombre)} a tu calendario. Se actualiza solo cuando cambian horarios o cruces.</p>
+    const txt = porConfirmar()
+      ? `Las fechas están por confirmar. Si te suscribes ahora, tu calendario se corregirá solo cuando se publique el nuevo calendario de ${esc(cat.nombre)}.`
+      : `Agrega todos los partidos de ${esc(cat.nombre)} a tu calendario. Se actualiza solo cuando cambian horarios o cruces.`;
+    return `<p class="agendar-txt">${txt}</p>
       <div class="agendar-btns">
         <a class="btn btn-prim" href="${esc(google)}" target="_blank" rel="noopener">${GCAL_ICON} Google Calendar</a>
         <a class="btn" href="${esc(webcal)}">${GCAL_ICON} iPhone / Outlook</a>
@@ -81,7 +85,7 @@
       ? `<span class="marcador">${p.gl} - ${p.gv}</span>`
       : `<span class="marcador pend">vs</span>`;
     return `<div class="partido">
-      <div class="meta">${esc(p.hora)} · Cancha ${esc(p.cancha)}${jugado(p) ? "" : `<br><a class="add-gcal" href="${esc(linkGoogleEvento(cat, fecha, p))}" target="_blank" rel="noopener" title="Agregar este partido a Google Calendar">${GCAL_ICON} Agendar</a>`}</div>
+      <div class="meta">${esc(p.hora)} · Cancha ${esc(p.cancha)}${jugado(p) || porConfirmar() ? "" : `<br><a class="add-gcal" href="${esc(linkGoogleEvento(cat, fecha, p))}" target="_blank" rel="noopener" title="Agregar este partido a Google Calendar">${GCAL_ICON} Agendar</a>`}</div>
       ${equipoHTML(p.local, "local")}${marcador}${equipoHTML(p.visita, "visita")}
     </div>`;
   }
@@ -89,8 +93,12 @@
   function fechaHTML(f, cat) {
     const libre = f.libre ? `<div class="libre">Libre: ${esc(f.libre)}</div>` : "";
     const tag = f.fase === "Playoffs" ? `<span class="tag">Playoffs</span>` : "";
+    const pc = porConfirmar() && !f.partidos.some(jugado);
+    const dia = pc
+      ? `<span class="dia-pc" title="Fecha original, por confirmar">${fechaTexto(f.dia)}</span><span class="tag tag-pc">Por confirmar</span>`
+      : `<span>${fechaTexto(f.dia)}</span>`;
     return `<div class="fecha">
-      <div class="fecha-head"><strong>${esc(f.nombre)}</strong><span>${fechaTexto(f.dia)}</span>${tag}</div>
+      <div class="fecha-head"><strong>${esc(f.nombre)}</strong>${dia}${tag}</div>
       ${f.partidos.map((p) => partidoHTML(p, cat, f)).join("")}${libre}
     </div>`;
   }
@@ -132,8 +140,16 @@
       : `<p class="vacio">No hay jugadores sancionados.</p>`;
   }
 
+  function avisoHTML(a) {
+    return `<div class="aviso">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9zm6 2v5h2v-5h-2zm0 6v2h2v-2h-2z"/></svg>
+      <div><strong>${esc(a.titulo || "Fechas por confirmar")}</strong><p>${esc(a.texto)}</p></div>
+    </div>`;
+  }
+
   function iniciar(json) {
     datos = json;
+    if (datos.aviso) document.getElementById("aviso").innerHTML = avisoHTML(datos.aviso);
     document.getElementById("actualizado").textContent = `Actualizado al ${fechaTexto(datos.actualizado).toLowerCase()}`;
     const nav = document.getElementById("categorias");
     nav.innerHTML = datos.categorias.map((c) => `<button role="tab" data-id="${esc(c.id)}">${esc(c.nombre)}</button>`).join("");
