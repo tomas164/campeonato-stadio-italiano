@@ -16,6 +16,10 @@
 </head>
 <body>
   <header class="hero">
+    <picture class="hero-foto" aria-hidden="true">
+      <source type="image/webp" srcset="img/cancha-900.webp 900w, img/cancha-1600.webp 1600w" sizes="100vw">
+      <img src="img/cancha-1600.jpg" srcset="img/cancha-900.jpg 900w, img/cancha-1600.jpg 1600w" sizes="100vw" alt="" fetchpriority="high">
+    </picture>
     <div class="fascia" aria-hidden="true"></div>
     <div class="wrap hero-inner">
       <svg class="scudetto" viewBox="0 0 100 120" aria-hidden="true">
@@ -48,6 +52,22 @@
     <section id="proximos" class="card destacada">
       <h2>Próxima fecha <span>Prossima giornata</span></h2>
       <div id="proximos-body"></div>
+    </section>
+
+    <section class="fotos" aria-label="Fotos del Futbolito">
+      <figure class="foto foto-grande">
+        <picture>
+          <source type="image/webp" srcset="img/jugada-800.webp 800w, img/jugada-1400.webp 1400w" sizes="(max-width: 760px) 100vw, 700px">
+          <img src="img/jugada-1400.jpg" srcset="img/jugada-800.jpg 800w, img/jugada-1400.jpg 1400w" sizes="(max-width: 760px) 100vw, 700px" alt="Jugada del Futbolito en la cancha de Stadio Italiano" loading="lazy" width="1400" height="917">
+        </picture>
+      </figure>
+      <figure class="foto">
+        <picture>
+          <source type="image/webp" srcset="img/balon-900.webp">
+          <img src="img/balon-900.jpg" alt="Botines y balón sobre el pasto" loading="lazy" width="900" height="601">
+        </picture>
+        <figcaption>Ricordi del campo <span>Futbolito 2020</span></figcaption>
+      </figure>
     </section>
 
     <div class="grid">

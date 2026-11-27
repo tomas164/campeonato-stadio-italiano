@@ -144,10 +144,23 @@
     render(location.hash.slice(1));
   }
 
+  // Las secciones y fotos entran con un movimiento suave al aparecer en pantalla.
+  function revelar() {
+    if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    document.documentElement.classList.add("anim");
+    const io = new IntersectionObserver((entradas) => {
+      entradas.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll("main .card, .fotos .foto").forEach((el) => io.observe(el));
+  }
+  revelar();
+
   fetch("data/torneo.json", { cache: "no-cache" })
     .then((r) => r.json())
     .then(iniciar)
     .catch(() => {
-      document.querySelector("main").innerHTML = `<section class="card"><p class="vacio">No se pudieron cargar los datos del campeonato.</p></section>`;
+      document.querySelector("main").innerHTML = `<section class="card visible"><p class="vacio">No se pudieron cargar los datos del campeonato.</p></section>`;
     });
 })();
